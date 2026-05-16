@@ -7,6 +7,10 @@ RUN npm install
 
 COPY . .
 
+# Build the app for production
+RUN npm run build
+
 EXPOSE 5173
 
-CMD ["npm", "run", "dev", "--", "--host"]
+# Use a simple server to serve the build, or use preview for now
+CMD ["npm", "run", "preview", "--", "--host", "--port", "5173"]
