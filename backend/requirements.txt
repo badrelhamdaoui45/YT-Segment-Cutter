@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+celery
+redis
+yt-dlp>=2024.4.15
+ffmpeg-python
+sqlalchemy
+websockets
+python-multipart
+pydantic
